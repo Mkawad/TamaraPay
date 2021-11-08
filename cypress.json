@@ -1,0 +1,23 @@
+{
+  "baseUrl":"https://tamara.co/en/tamara-stores.html",
+  "env":{
+    "accessToken": "f1391adfba2cda8381f1a31a8f25ec457712f2a9fc6ccef4360e073a8e008930"
+
+  },
+  "defaultCommandTimeout": 3000,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+    "cypressMochawesomeReporterReporterOptions": {
+      "reportDir": "cypress/reports",
+      "charts": true,
+      "reportPageTitle": "My Test Suite",
+      "embeddedScreenshots": true,
+      "inlineAssets": true
+    },
+    "mochaJunitReporterReporterOptions": {
+      "mochaFile": "cypress/reports/junit/results-[hash].xml"
+    }
+  },
+  "video": false
+}
